@@ -28,8 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Calculates of gets from the cache the inverse of a "matrix" object
-
+## Calculates the inverse of a matrix object or
+## gets it from the cache
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
     if (!is.null(inv)) {
